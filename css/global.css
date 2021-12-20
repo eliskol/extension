@@ -18,7 +18,13 @@ div.graphic > img {
 td,
 li,
 .mjpage,
-span {
+span,
+span.mjpage,
+svg,
+mjx-container,
+g {
+    fill: var(--main-text-color) !important;
+    stroke: var(--main-text-color) !important;
     color: var(--main-text-color) !important;
 }
 
