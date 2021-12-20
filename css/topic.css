@@ -3,3 +3,9 @@ td,
 li {
     color: var(--main-text-color) !important;
 }
+
+#lessonSidebar,
+.step,
+div#sectionLinks {
+    background: var(--foreground-color) !important;
+}
