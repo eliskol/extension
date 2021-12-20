@@ -20,8 +20,6 @@ td.leaderboardUserName {
 }
 
 a#learnHeaderLink,
-div.stepHeader,
-div.explanationHeader,
 #topicName,
 div#prerequisitesHeader,
 span.taskTypeUnlocked,
@@ -62,8 +60,4 @@ img#courseBelt {
 
 div#beltList {
     box-shadow: none !important;
-}
-
-div.question {
-    margin-bottom: 10px;
 }

@@ -13,4 +13,10 @@ div#lessonFrame {
 div.question {
     color: var(--main-text-color) !important;
     background: var(--secondary-background-color) !important;
+    margin-bottom: 10px;
+}
+
+div.stepHeader,
+div.explanationHeader {
+    color: var(--header-color) !important;
 }
