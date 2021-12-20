@@ -1,9 +1,9 @@
 div#reviewFrame {
-    background: var(--main-background-color) !important;
+    background: var(--background-color) !important;
 }
 
 a.topicLink, .questionHeader {
-    color: var(--light-blue) !important;
+    color: var(--header-color) !important;
 }
 
 td.choiceLetter > div.choiceLetterCircle {
@@ -12,12 +12,12 @@ td.choiceLetter > div.choiceLetterCircle {
 
 td.choiceLetter > div.selectedChoice {
     /* background: rgb(60, 60, 60); */
-    background: var(--secondary-background-color);
+    background: var(--foreground-color);
 }
 
 .step,
 div#questionAnswerFrame {
-    background: var(--secondary-background-color);
+    background: var(--foreground-color);
 }
 
 td.augmentation {
@@ -26,7 +26,7 @@ td.augmentation {
 
 div#prerequisiteFrame {
     width: 300px;
-    background: var(--secondary-background-color);
+    background: var(--foreground-color);
     border: 1px solid rgb(224, 224, 224);
     margin-top: 15px;
     font-size: 13px;
@@ -35,7 +35,7 @@ div#prerequisiteFrame {
 }
 
 object#prerequisiteBrowser {
-    background: var(--secondary-background-color);
+    background: var(--foreground-color);
     border: 1px solid rgb(224, 224, 224);
     margin-top: 15px;
     width: 500px;
@@ -56,6 +56,6 @@ div#prerequisiteHeader {
 }
 
 div.question {
-    color: #dcddde !important;
+    color: var(--main-text-color) !important;
     margin-bottom: 20px;
 }

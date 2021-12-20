@@ -1,9 +1,9 @@
 div#lessonFrame {
-    background: var(--main-background-color) !important;
+    background: var(--background-color) !important;
 }
 
 .step {
-    background: var(--secondary-background-color) !important;
+    background: var(--foreground-color) !important;
 }
 
 .step p {
@@ -12,7 +12,7 @@ div#lessonFrame {
 
 div.question {
     color: var(--main-text-color) !important;
-    background: var(--secondary-background-color) !important;
+    background: var(--foreground-color) !important;
     margin-bottom: 10px;
 }
 

@@ -1,8 +1,8 @@
 :root {
-    --main-background-color: #23272A;
-    --secondary-background-color: #2C2F33;
+    --background-color: #23272A;
+    --foreground-color: #2C2F33;
     --header-color: #2498eb;
-    --main-text-color: #dcddde !important;
+    --main-text-color: #dcddde;
 }
 
 div.graphic > img {
@@ -18,5 +18,5 @@ span {
 }
 
 body {
-    background: var(--main-background-color) !important;
+    background: var(--background-color) !important;
 }

@@ -1,6 +1,6 @@
 div#beltList,
 div#courseUnits {
-    background: var(--main-background-color) !important;
+    background: var(--background-color) !important;
 }
 
 div.reviewAnswerList,
@@ -11,12 +11,12 @@ div.sidebarFrame,
 #lessonSidebar,
 div#sectionLinks,
 div.taskExpanded {
-    background: var(--secondary-background-color) !important;
+    background: var(--foreground-color) !important;
 }
 
 div.taskNameUnlocked,
 td.leaderboardUserName {
-    color: #dcddde !important;
+    color: var(--main-text-color) !important;
 }
 
 a#learnHeaderLink,
@@ -31,7 +31,7 @@ span.tabSelected,
 span.taskPointsUnlocked,
 div.taskPrerequisitesHeader,
 a.stepAnchor {
-    color: var(--light-blue) !important;
+    color: var(--header-color) !important;
 }
 
 a.sectionLink {
