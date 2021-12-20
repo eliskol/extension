@@ -33,18 +33,6 @@ div#prerequisiteFrame {
     margin-right: 25px;
 }
 
-object#prerequisiteBrowser {
-    background: var(--foreground-color);
-    border: var(--border-style);
-    margin-top: 15px;
-    width: 500px;
-    overflow: hidden;
-    height: 500px;
-    scrollbar-color: inherit;
-    margin-left: 25px;
-
-}
-
 div.prerequisite {
     margin-top: 5px;
     vertical-align: middle;
