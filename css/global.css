@@ -1,0 +1,26 @@
+div#topRibbon {
+    background: var(--foreground-color) !important;
+}
+
+:root {
+    --background-color: #23272A;
+    --foreground-color: #2C2F33;
+    --header-color: #2498eb;
+    --main-text-color: #dcddde;
+}
+
+div.graphic > img {
+    /* changes how graphs and images look */
+    filter: invert(100%) grayscale(40%);
+}
+
+td,
+li,
+.mjpage,
+span {
+    color: var(--main-text-color) !important;
+}
+
+body {
+    background: var(--background-color) !important;
+}
