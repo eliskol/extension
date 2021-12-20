@@ -57,4 +57,4 @@ const createPrerequisiteDisplay = (prerequisiteJSON) => {
 
 fetchPrerequisites().then(json => {
     createPrerequisiteDisplay(json);
-})
+});
