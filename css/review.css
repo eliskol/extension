@@ -1,4 +1,5 @@
-div#reviewFrame {
+div#reviewFrame,
+div#answerContainer {
     background: var(--background-color) !important;
 }
 
