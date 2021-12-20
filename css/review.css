@@ -1,5 +1,4 @@
-div#reviewFrame,
-div#answerContainer {
+div#reviewFrame {
     background: var(--background-color) !important;
 }
 
@@ -16,8 +15,9 @@ div.selectedChoice {
 }
 
 .step,
-div#questionAnswerFrame {
-    background: var(--foreground-color);
+div#questionAnswerFrame ,
+div#answerContainer {
+    background: var(--foreground-color) !important;
 }
 
 td.augmentation {
