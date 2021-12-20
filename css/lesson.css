@@ -28,3 +28,26 @@ div.explanationHeader {
 div.selectedChoice {
     background: var(--foreground-color) !important;
 }
+
+td.augmentation {
+    vertical-align: top;
+}
+
+div#prerequisiteFrame {
+    width: 300px;
+    background: var(--foreground-color);
+    border: var(--border-style);
+    margin-top: 15px;
+    font-size: 13px;
+    padding: 15px;
+    margin-right: 25px;
+}
+
+div.prerequisite {
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+div#prerequisiteHeader {
+    font-weight: bold;
+}
