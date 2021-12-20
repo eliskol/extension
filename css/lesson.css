@@ -20,3 +20,11 @@ div.stepHeader,
 div.explanationHeader {
     color: var(--header-color) !important;
 }
+
+.choiceLetterCircle {
+    background: var(--background-color) !important;
+}
+
+div.selectedChoice {
+    background: var(--foreground-color) !important;
+}

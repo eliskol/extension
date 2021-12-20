@@ -6,13 +6,12 @@ a.topicLink, .questionHeader {
     color: var(--header-color) !important;
 }
 
-td.choiceLetter > div.choiceLetterCircle {
-    background: #56585c;
+.choiceLetterCircle {
+    background: var(--background-color) !important;
 }
 
-td.choiceLetter > div.selectedChoice {
-    /* background: rgb(60, 60, 60); */
-    background: var(--foreground-color);
+div.selectedChoice {
+    background: var(--foreground-color) !important;
 }
 
 .step,
@@ -27,7 +26,7 @@ td.augmentation {
 div#prerequisiteFrame {
     width: 300px;
     background: var(--foreground-color);
-    border: 1px solid rgb(224, 224, 224);
+    border: var(--border-style);
     margin-top: 15px;
     font-size: 13px;
     padding: 15px;
@@ -36,7 +35,7 @@ div#prerequisiteFrame {
 
 object#prerequisiteBrowser {
     background: var(--foreground-color);
-    border: 1px solid rgb(224, 224, 224);
+    border: var(--border-style);
     margin-top: 15px;
     width: 500px;
     overflow: hidden;
