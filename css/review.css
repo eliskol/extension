@@ -24,13 +24,17 @@ td.augmentation {
 }
 
 div#prerequisiteFrame {
+    text-align: left;
     width: 300px;
     background: var(--foreground-color);
     border: var(--border-style);
     margin-top: 15px;
     font-size: 13px;
     padding: 15px;
-    margin-right: 25px;
+    /* margin-right: 25px; */
+    position: fixed;
+    left: 240px;
+    top: 62px;
 }
 
 div.prerequisite {
