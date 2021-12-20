@@ -29,7 +29,8 @@ td#leaderboardTitle,
 span.tabSelected,
 span.taskPointsUnlocked,
 div.taskPrerequisitesHeader,
-a.stepAnchor {
+a.stepAnchor,
+div#selectingTasks {
     color: var(--header-color) !important;
 }
 

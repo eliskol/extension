@@ -44,9 +44,12 @@
             "matches": [
                 "https://*.mathacademy.com/topics/*"
             ],
+            "css": [
+                "./css/topic.css"
+            ],
             "run_at": "document_end",
             "js": [
-                "./js/topicpage.js"
+                "./js/topic.js"
             ]
         },
         {

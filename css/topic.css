@@ -1,0 +1,5 @@
+.step p,
+td,
+li {
+    color: var(--main-text-color) !important;
+}
