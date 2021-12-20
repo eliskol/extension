@@ -32,7 +32,6 @@
                 "https://*.mathacademy.com/*"
             ],
             "css": [
-                "./theme.css",
                 "./css/global.css"
             ],
             "run_at": "document_end",
