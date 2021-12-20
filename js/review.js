@@ -46,12 +46,14 @@ const createPrerequisiteDisplay = (prerequisiteJSON) => {
 
     const dummyTd = document.createElement('td');
     const secondDummyTd = document.createElement('td');
-    progressRow.insertBefore(dummyTd, progressRow.firstElementChild);
+    // progressRow.insertBefore(dummyTd, progressRow.firstElementChild);
 
-    td.appendChild(prerequisiteFrame);
-    questionRow.insertBefore(td, questionRow.firstElementChild);
+    document.querySelector('div#questionAnswerFrame').parentElement.appendChild(prerequisiteFrame, document.querySelector('div#questionAnswerFrame'));
+
+    // td.appendChild(prerequisiteFrame);
+    // questionRow.insertBefore(td, questionRow.firstElementChild);
     secondDummyTd.style.width = '359px';
-    questionRow.appendChild(secondDummyTd);
+    // questionRow.appendChild(secondDummyTd);
 }
 
 
