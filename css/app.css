@@ -742,3 +742,33 @@ div.graphic {
     font-weight: bold;
     color: red;
 }
+
+/* new */
+
+div.course {
+    background: var(--foreground-color);
+}
+
+div#content > div#courseSequence {
+    color: var(--header-color);
+}
+
+span.unitName {
+    color: var(--main-text-color);
+}
+
+div.module > div.moduleHeader {
+    color: var(--secondary-text-color);
+}
+
+div.module {
+    background: var(--foreground-color);
+}
+
+div#content > div#sidebar {
+    background: var(--foreground-color);
+}
+
+div#sidebar > div#sequenceName {
+    color: var(--header-color);
+}
