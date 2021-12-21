@@ -5,10 +5,11 @@
     "manifest_version": 3,
     "background": {},
     "permissions": [
-        "contentSettings"
+        "contentSettings",
+        "storage"
     ],
     "action": {
-        "default_popup": "",
+        "default_popup": "./html/popup.html",
         "default_icon": {}
     },
     "icons": {},
@@ -20,7 +21,7 @@
                 "https://*.mathacademy.com/assignments/*"
             ],
             "css": [
-                "./css/learn.css"
+
             ],
             "run_at": "document_end",
             "js": [
@@ -32,7 +33,7 @@
                 "https://*.mathacademy.com/*"
             ],
             "css": [
-                "./css/global.css"
+                "./css/theme.css"
             ],
             "run_at": "document_end",
             "js": [
@@ -45,7 +46,7 @@
                 "https://*.mathacademy.com/topics/*"
             ],
             "css": [
-                "./css/topic.css"
+
             ],
             "run_at": "document_end",
             "js": [
@@ -57,7 +58,7 @@
                 "https://*.mathacademy.com/*/review"
             ],
             "css": [
-                "./css/review.css"
+
             ],
             "run_at": "document_end",
             "js": [
@@ -69,7 +70,7 @@
                 "https://*.mathacademy.com/*/lesson"
             ],
             "css": [
-                "./css/lesson.css"
+
             ],
             "run_at": "document_end",
             "js": [
@@ -80,7 +81,8 @@
     "web_accessible_resources": [
         {
             "resources": [
-                "img/*"
+                "img/*",
+                "css/*"
             ],
             "matches": [
                 "https://*.mathacademy.com/*"

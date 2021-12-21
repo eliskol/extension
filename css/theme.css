@@ -1,6 +1,6 @@
-div#topRibbon {
+/* div#topRibbon {
     background: var(--foreground-color) !important;
-}
+} */
 
 :root {
     --background-color: #23272A;
@@ -9,6 +9,7 @@ div#topRibbon {
     --main-text-color: #dcddde;
     --border-style: 1px solid rgb(224, 224, 224);
     --secondary-text-color: #AAAAFA;
+    --info-text-color: #aaabb1;
 }
 
 div.graphic > img {
@@ -26,6 +27,6 @@ g {
     color: var(--main-text-color) !important;
 }
 
-body {
+/* body {
     background: var(--background-color) !important;
-}
+} */

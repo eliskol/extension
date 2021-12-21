@@ -1,0 +1,851 @@
+body {
+    overflow-x: hidden;
+    background-color: var(--background-color);
+}
+
+a#learnHeaderLink {
+    color: var(--header-color);
+    border-color: var(--header-color);
+}
+
+div#container {
+    width: 1000px;
+}
+
+div#sidebar {
+    float: left;
+    top: 80px;
+    width: 350px;
+}
+
+div#taskAnswersFrame {
+    margin-left: 390px;
+    margin-top: 9px;
+    width: 750px;
+}
+
+div#incompleteTasks {
+    margin-left: 390px;
+    margin-top: 9px;
+    width: 750px;
+}
+
+div#selectingTasks {
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 2px;
+    margin-bottom: 15px;
+    width: 650px;
+}
+
+div#completedTasks {
+    margin-left: 390px;
+    margin-top: 9px;
+    width: 750px;
+    padding-bottom: 30px;
+}
+
+div.completedTasksDate {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: rgb(148, 148, 148);
+    text-align: center;
+}
+
+div#courseFrame {
+    width: 320px;
+    padding: 15px;
+}
+
+div#courseHeader {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+a.courseNameLink {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+};
+
+div#courseProgress {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgb(236, 236, 236);
+}
+
+img#courseBelt {
+    margin-right: 10px;
+    max-height: 22px;
+}
+
+div#coursePoints {
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: default;
+}
+
+div.coursePointsAhead {
+    font-weight: bold;
+    color: lightgreen;
+}
+
+div.coursePointsBehind {
+    font-weight: bold;
+    color: red;
+}
+
+div.coursePointsOnPace {
+    font-weight: bold;
+    color: var(--info-text-color);
+}
+
+span.coursePointsPace {
+    color: var(--info-text-color);
+}
+
+div.sidebarFrame {
+    margin-bottom: 10px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 3px;
+    width: 350px;
+    background-color: var(--foreground-color);
+}
+
+div.sidebarHeader {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--secondary-text-color);
+}
+
+div#progressFrame {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+div#belt {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--secondary-text-color);
+}
+
+div#pointsText {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    color: var(--info-text-color);
+}
+
+div#progressMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--info-text-color);
+}
+
+div#dailyGoalFrame {
+    height: 100px;
+    position: relative;
+}
+
+div#dailyGoalProgressBarFrame {
+    position: relative;
+    margin-left: 15px;
+    margin-top: 25px;
+    background: rgb(240, 241, 242);
+    width: 230px;
+    height: 20px;
+    border-radius: 2px;
+}
+
+div#dailyGoalProgressBar {
+    position: absolute;
+    background-color: rgb(254, 212, 10);
+    height: 20px;
+    border-radius: 2px;
+}
+
+div#dailyGoalProgressBarExceeded {
+    position: absolute;
+    background-color: green;
+    height: 20px;
+    border-radius: 2px;
+}
+
+div#dailyGoalPoints {
+    position: absolute;
+    right: 17px;
+    top: 61px;
+    font-size: 14px;
+    color: var(--info-text-color);
+}
+
+div#dailyGoalMessage {
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--info-text-color);
+}
+
+div#activityFrame {
+    height: 300px;
+}
+
+div#activityWidget {
+    position: relative;
+    margin-left: 30px;
+    margin-top: 20px;
+    border: 1px solid rgb(242, 242, 242);
+    width: 300px;
+    height: 200px;
+}
+
+div#activityWidget-main {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 300px;
+    height: 160px;
+}
+
+div.dayActivity {
+    position: absolute;
+    bottom: 0px;
+    width: 30px;
+    background-color: rgb(242, 242, 242);
+}
+
+
+div#activityWidget-daysOfWeek {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 300px;
+    height: 40px;
+
+    border: 1px solid rgb(242, 242, 242);
+}
+
+
+
+div#leaderboardFrame {
+    padding-bottom: 15px;
+}
+
+table#leaderboardHeader {
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 320px;
+
+}
+
+td#leaderboardTitle {
+    width: 80px;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--secondary-text-color);
+}
+
+td#leaderboardTabs {
+    width: 150px;
+    text-align: right;
+    font-size: 13px;
+}
+
+span.tab {
+    color: var(--info-text-color);
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+span.tabSelected {
+    color: var(--secondary-text-color);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+span#tabSpacer {
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 16px;
+    color: rgb(232, 232, 232);
+}
+
+div#weekLeaderboard {
+    display: none;
+}
+
+div#overallLeaderboard {
+    display: block;
+}
+
+div#leaderboardTableFrame {
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 330px;
+    height: fit-content;
+    overflow-y: none;
+}
+
+td.leaderboardUserRank {
+    width: 25px;
+    height: 22px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--main-text-color);
+}
+
+td.leaderboardUserBelt {
+    width: 55px;
+}
+
+td.leaderboardUserName {
+    font-size: 15px;
+    color: var(--main-text-color);
+    width: 165px;
+}
+
+td.leaderboardUserPoints {
+    font-size: 15px;
+    color: var(--info-text-color);
+    width: 60px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+div.taskUnlocked {
+    background: var(--foreground-color);
+    margin-right: 10px;
+    margin-bottom: 12px;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 2px;
+    padding: 15px;
+    width: 650px;
+    cursor: pointer;
+}
+
+div.taskUnlocked:hover {
+    background: var(--background-color);
+}
+
+div.taskCompleted {
+    background: var(--foreground-color);
+    margin-right: 10px;
+    margin-bottom: 12px;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 0px;
+    padding: 15px;
+    width: 650px;
+    cursor: pointer;
+}
+
+div.taskCompleted:hover {
+    background: var(--background-color);
+}
+
+div.taskHeader {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+img.unlockedIcon {
+    max-height: 22px;
+}
+
+span.taskTypeLocked {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+    vertical-align: bottom;
+    line-height: 22px;
+}
+
+span.taskTypeUnlocked {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 7px;
+    color: var(--secondary-text-color);
+    vertical-align: bottom;
+    line-height: 22px;
+}
+
+span.taskPointsLocked {
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--main-text-color);
+    vertical-align: bottom;
+    line-height: 22px;
+}
+
+span.taskPointsUnlocked {
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+    vertical-align: bottom;
+    line-height: 22px;
+}
+
+span.pointsGained {
+    font-weight: bold;
+    color: lightgreen;
+}
+
+span.pointsLost {
+    font-weight: bold;
+    color: red;
+}
+
+span.completedTaskPointsSlash {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    color: rgb(192, 192, 192);
+}
+
+
+span.completedTaskPoints {
+    color: var(--info-text-color);
+    font-weight: normal !important;
+}
+
+div.taskCourseNameUnlocked {
+    font-size: 11px;
+    font-weight: normal;
+    color: var(--info-text-color);
+    text-transform: uppercase;
+}
+
+div.taskCourseNameLocked {
+    font-size: 11px;
+    font-weight: normal;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+}
+
+div.taskNameUnlocked {
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--main-text-color);
+}
+
+div.taskNameLocked {
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--main-text-color);
+}
+
+a.completedTaskTopicLink {
+    color: var(--main-text-color);
+}
+
+div.taskProgressFrame {
+    margin-top: 20px;
+}
+
+div.taskProgressBarFrame {
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+    background: rgb(240, 241, 242);
+    width: 590px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+div.taskProgressBar {
+    position: absolute;
+    background-color: var(--header-color);
+    height: 4px;
+    border-radius: 2px;
+}
+
+div.taskProgress {
+    display: inline-block;
+    float: right;
+    font-size: 13px;
+    color: var(--info-text-color);
+}
+
+div.taskTimeCompleted {
+    margin-top: 30px;
+    font-size: 13px;
+    color: var(--info-text-color);
+}
+
+div.taskDetails {
+    margin-top: 20px;
+    display: none;
+    margin-bottom: 5px;
+}
+
+div.testDetails {
+    margin-top: 40px;
+    border-top: 1px solid rgb(236, 236, 236);
+    padding-top: 30px;
+    font-size: 13px;
+}
+
+td.testFieldName {
+    color: var(--secondary-text-color);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+td.testFieldValue {
+    font-size: 13px;
+}
+
+div.taskPrerequisites {
+    margin-top: 40px;
+    border-top: 1px solid rgb(236, 236, 236);
+    padding-top: 30px;
+    font-size: 13px;
+}
+
+div.taskPrerequisitesHeader {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    margin-bottom: 13px;
+}
+
+div.taskPrerequisite {
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+img.prerequisiteCheckmark {
+    max-width: 14px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+div.taskButtons {
+    margin-top: 40px;
+}
+
+a.taskStartButton {
+    width: 100px;
+}
+
+/*******************************************************************************/
+div#courseUnits {
+    position: absolute;
+    visibility: hidden;
+    padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 3px;
+    top: 53px;
+    left: 0px;
+    background: var(--background-color);
+
+    /* -moz-box-shadow: 5px 5px 5px #ccc
+    -webkit-box-shadow: 5px 5x 5px #ccc;
+    box-shadow: 5px 5px 5px #ccc; */
+}
+
+div.courseUnit {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--info-text-color);
+}
+
+table.courseUnitProgressBar {
+    margin-top: 5px;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+/*******************************************************************************/
+
+div#beltList{
+    position: absolute;
+    visibility: hidden;
+    padding: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 3px;
+    top: 110px;
+    left: 0px;
+    background: var(--background-color);
+
+    /* -moz-box-shadow: 5px 5px 5px #ccc
+    -webkit-box-shadow: 5px 5x 5px #ccc;
+    box-shadow: 5px 5px 5px #ccc; */
+}
+
+div##beltTable {
+}
+
+td.beltTableIconColumn {
+    width: 77px;
+}
+
+td.beltTableNameColumn {
+    width: 178px;
+}
+
+td.beltTableXPColumn {
+    text-align: right;
+    font-size: 13px;
+    color: var(--main-text-color);
+}
+
+
+/*******************************************************************************/
+
+div#progressDetailsHeader {
+    padding-left: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+div#progressDetails {
+    position: absolute;
+    visibility: hidden;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 3px;
+    top: 110px;
+    left: 0px;
+    background: var(--background-color);
+    width: 321px;
+
+    font-size: 15px;
+    color: var(--info-text-color);
+
+    /* -moz-box-shadow: 5px 5px 5px #ccc
+    -webkit-box-shadow: 5px 5x 5px #ccc;
+    box-shadow: 5px 5px 5px #ccc; */
+}
+
+td.progressFieldName {
+    white-space: nowrap;
+    padding-right: 30px;
+    color: var(--info-text-color);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+td.progressFieldData {
+    font-weight: normal;
+    color: var(--info-text-color);
+    font-size: 13px;
+}
+
+td.ahead {
+    color: green !important;
+}
+
+td.behind {
+    color: red !important;
+}
+
+/*******************************************************************************/
+
+div#knowledgeGraph-closeButton {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 42px;
+    height: 42px;
+    background-image: url('/img/close-button.png');
+    cursor: pointer;
+}
+
+div#knowledgeGraph-closeButton:hover {
+    background-image: url('/img/close-button-hover.png');
+}
+
+div#knowledgeGraph-loadingMessage {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+    color: var(--main-text-color);
+}
+
+/**********************************************************************************/
+
+div.taskExpanded {
+    background: var(--foreground-color);
+    margin-right: 10px;
+    margin-bottom: 12px;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 2px;
+    padding: 15px;
+    width: 650px;
+}
+
+div#taskAnswersFrame {
+    display: none;
+}
+
+div#taskAnswersFrameHeader {
+    height: 40px;
+
+}
+
+div#taskBackButton {
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-image: url('/img/back-arrow.png');
+    cursor: pointer;
+}
+
+div.taskBackButton:hover {
+
+}
+
+div.topicHeader {
+    width: 675px;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+a.topicLink {
+    color: var(--secondary-text-color);
+}
+
+div.kpList {
+    padding-bottom: 40px;
+}
+
+div.kp {
+    width: 680px;
+    border: 1px solid rgb(234, 234, 234);
+    margin-top: 30px;
+}
+
+div.kpTitle {
+    padding: 15px;
+    font-size: 14px;
+    color: var(--main-text-color);
+}
+
+div.reviewAnswerList {
+    width: 680px;
+    border-bottom: 1px solid rgb(234, 234, 234);
+    border-left: 1px solid rgb(234, 234, 234);
+    border-right: 1px solid rgb(234, 234, 234);
+}
+
+div.testAnswerList {
+    width: 680px;
+    border-bottom: 1px solid rgb(234, 234, 234);
+    border-left: 1px solid rgb(234, 234, 234);
+    border-right: 1px solid rgb(234, 234, 234);
+}
+
+div.question {
+    padding: 15px;
+    border-top: 1px solid rgb(234, 234, 234);
+    color: var(--main-text-color);
+    cursor: pointer;
+}
+
+div.questionHeader {
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+span.questionNumber {
+    color: var(--info-text-color);
+    text-transform: uppercase;
+}
+
+span.answerResult {
+    float: right;
+}
+
+div.questionText {
+    margin-top: 10px;
+}
+
+div.questionGraphic {
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.answerDetails {
+    margin-top: 45px;
+}
+
+div.questionDifficulty {
+    margin-left: 0px;
+}
+
+span.answerCreated {
+    margin-left: 10px;
+}
+
+span.answerContext {
+    margin-left: 10px;
+}
+
+div.timeElapsed {
+    padding-right: 10px;
+}
+
+span.answerDetailsSeparator {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--info-text-color);
+}
+
+span.explanationToggle {
+    cursor: pointer;
+    user-select: none;
+}
+
+div.questionExplanation {
+    margin-top: 20px;
+    border-top: 1px solid rgb(234, 234, 234);
+    padding-top: 20px;
+    display: none;
+}
+
+div.studentAnswerHeader {
+    margin-top: 25px;
+    font-weight: bold;
+    color: red;
+}
+
+div.studentAnswer {
+    margin-top: 15px;
+}

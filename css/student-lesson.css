@@ -1,0 +1,461 @@
+div#exitButton {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 42px;
+    height: 42px;
+    background-image: url('/img/close-button.png');
+    cursor: pointer;
+}
+
+div#exitButton:hover {
+    background-image: url('/img/close-button-hover.png');
+}
+
+
+div#topBarContainer {
+    visibility: hidden;
+}
+
+div#lessonFrame {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: var(--background-color);
+    z-index: 20;
+    text-align: center;
+}
+
+div#lessonMain {
+
+}
+
+div#progressBar {
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+    width: fit-content;
+}
+
+div#steps {
+    display: inline-block;
+    background: var(--foreground-color);
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+/*
+div#progressBarLine {
+    position: absolute;
+    top: 13px;
+    background: rgb(224, 224, 224);
+    width: 100%;
+    height: 2px;
+    z-index: 0;
+}
+*/
+
+/*
+.stepButton {
+    float: left;
+    margin-top: 10px;
+    margin-right: 2px;
+    width: 28px;
+    height: 6px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background: rgb(204, 204, 204);
+}
+
+.stepButton {
+    float: left;
+    margin-top: 12px;
+    margin-right: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 4px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid rgb(164, 164, 164);
+    z-index: 2;
+}
+
+.current {
+    margin-top: 9px;
+    width: 12px;
+    height: 12px;
+    border-radius: 7px;
+}
+*/
+
+.stepButton {
+    float: left;
+    margin-top: 10px;
+    margin-right: 2px;
+    width: 30px;
+    height: 5px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+/*
+.current {
+    margin-top: 7px;
+    height: 10px;
+    background: rgb(9, 107, 183);
+}
+*/
+
+.current {
+    background: rgb(0, 165, 255);
+    border: 1px solid rgb(164, 164, 164);
+}
+
+
+.correct {
+    /*
+    background: green;
+    border: 1px solid green;
+    */
+    background: rgb(9, 107, 183);
+    border: 1px solid rgb(9, 107, 183);
+}
+
+.incorrect {
+    /*
+    background: red;
+    border: 1px solid red;
+    */
+    background: rgb(9, 107, 183);
+    border: 1px solid rgb(9, 107, 183);
+}
+
+
+.visited {
+    /*background: rgb(196, 196, 196);
+    border: 1px solid rgb(196, 196, 196);
+    */
+    background: rgb(9, 107, 183);
+    border: 1px solid rgb(9, 107, 183);
+}
+
+
+/* This is to style <hr> tags that are sometimes found in tutorials and question explanations */
+hr {
+    border-top: 1px solid rgb(242, 242, 242);
+    margin-bottom: 40px;
+}
+
+div#header {
+    text-align: center;
+}
+
+#lessonContent {
+    padding-top: 20px;
+}
+
+
+
+
+
+
+.step {
+    padding: 15px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 3px;
+    width: 700px;
+    font-size: 16px;
+    margin-top: 0px;
+    display: none;
+}
+
+.step p, td, li {
+    font-size: 16px;
+    color: var(--main-text-color);
+}
+
+p {
+    margin-bottom: 40px;
+    color: var(--main-text-color);
+}
+
+.stepHeader {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;;
+    margin-bottom: 35px;
+    color: var(--header-color);
+}
+
+.stepName {
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--header-color);
+}
+
+div.tutorial {
+    text-align: left;
+}
+
+div.example {
+    text-align: left;
+}
+
+div.question {
+    text-align: left;
+}
+
+.questionGraphic {
+    margin-bottom: 30px;
+}
+
+.questionText p, td, li, span {
+    font-size: 16px;
+    color: var(--main-text-color);
+}
+.questionExplanation p, td, li {
+    font-size: 16px;
+    color: var(--main-text-color);
+}
+
+table.choicesTable {
+    margin-top: 25px;
+    color: var(--main-text-color);
+}
+
+td.choiceLetter {
+    width: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: var(--main-text-color);
+    user-select: none;
+}
+
+div.choiceLetterCircle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(224, 224, 224);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+}
+
+div.selectedChoice {
+    background: var(--main-text-color);
+    color: white;
+}
+
+td.choiceText {
+    padding-left: 10px;
+    font-size: 14px;
+    cursor: default;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+div#freeResponseFrame {
+    margin-top: 30px;
+}
+
+input#freeResponseAnswer {
+    border: 1px solid rgb(224, 224, 224);
+    font-size: 14px;
+    outline: none;
+    height: 25px;
+    width: 50px;
+}
+
+input[type="text"][disabled] {
+    border: 1px solid rgb(9, 107, 183);
+    color: var(--main-text-color);
+}
+
+.answer {
+    margin-top: 35px;
+}
+
+.correctAnswerText {
+    padding-left: 15px;
+    vertical-align: middle;
+    color: green;
+    font-size: 16px !important;
+}
+
+.incorrectAnswerText {
+    padding-left: 15px;
+    padding-top: 3px;
+    vertical-align: middle;
+    color: red;
+    font-size: 16px !important;
+}
+
+div.explanationFrame {
+    text-align: left;
+}
+
+div.explanationHeader {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--header-color);
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid rgb(224, 224, 224);
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+div.questionExplanation {
+    text-align: left;
+}
+
+div#buttonBar {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(224, 224, 224);
+    height: 40px;
+}
+
+div#flagButton {
+    float: right;
+    text-align: center;
+    margin-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 17px;
+    font-size: 12px;
+    width: 82px;
+    background: white;
+    color: var(--main-text-color);
+    border: 1px rgb(224, 224, 224) solid;
+    cursor: pointer;
+    user-select: none;
+}
+
+div#submitButton {
+    text-align: center;
+    left: 0px;
+    top: 25px;
+    width: 82px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 17px;
+    font-size: 12px;
+    cursor: pointer;
+    display: none;
+    user-select: none;
+}
+
+div#nextButton {
+    float: right;
+    margin-left: 5px;
+    text-align: center;
+    right: 0px;
+    top: 25px;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 17px;
+    font-size: 12px;
+    background: rgb(9, 107, 183);
+    color: rgb(248, 248, 248);
+    cursor: pointer;
+    display: none;
+    user-select: none;
+}
+
+div.enabledButton {
+    background: rgb(9, 107, 183);
+    color: rgb(248, 248, 248);
+}
+
+div.disabledButton {
+    background: rgb(204, 204, 204);
+    color: rgb(248, 248, 248);
+}
+
+/***************************************************************************************/
+
+div#finalScreen {
+    display: none;
+    position: absolute;
+    width: 800px;
+    top: 80px;
+    left: 50%;
+    margin-left: -400px;
+}
+
+div#finalScreen-completionMessage {
+    text-align: left;
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    color:var(--main-text-color);
+}
+
+div#finalScreen-pointsMessage {
+    text-align: left;
+    margin-top: 60px;
+    font-size: 16px;
+    color:rgb(128, 128, 128);
+}
+
+div#finalScreen-buttonBar {
+    display: none;
+    margin-top: 25px;
+    border-top: 1px solid rgb(224, 224, 224);
+    padding-top: 20px;
+}
+
+div#finalScreen-doneButton {
+    text-align: center;
+    top: 25px;
+    width: 160px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 17px;
+    font-size: 12px;
+    background: rgb(9, 107, 183);
+    color: rgb(248, 248, 248);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* added by extension */
+td.augmentation {
+    vertical-align: top;
+}
+
+div#prerequisiteFrame {
+    width: 300px;
+    background: var(--foreground-color);
+    border: var(--border-style);
+    margin-top: 15px;
+    font-size: 13px;
+    padding: 15px;
+    margin-right: 25px;
+}
+
+div.prerequisite {
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+div#prerequisiteHeader {
+    font-weight: bold;
+}

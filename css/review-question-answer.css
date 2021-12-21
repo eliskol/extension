@@ -1,0 +1,458 @@
+body {
+    background: var(--background-color);
+}
+
+p {
+    font-size: 14px;
+}
+
+div#exitButton {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 42px;
+    height: 42px;
+    background-image: url('/img/close-button.png');
+    cursor: pointer;
+}
+
+div#exitButton:hover {
+    background-image: url('/img/close-button-hover.png');
+}
+
+div#reviewFrame {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: var(--background-color);
+    z-index: 20;
+    text-align: center;
+}
+
+div#questionAnswerFrame {
+    padding: 15px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 3px;
+    width: 700px;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: left;
+    background: var(--foreground-color);
+}
+
+div#questionContainer {
+    position: relative;
+    display: none;
+    text-align: left;
+}
+
+div#progressBar {
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+    width: fit-content;
+}
+
+
+div.questionButton {
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    margin-right: 2px;
+    width: 30px;
+    height: 6px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+div.currentQuestion {
+    margin-top: 8px;
+    height: 10px;
+}
+
+.correctAnswer {
+    background: lightgreen;
+    border: 1px solid lightgreen;
+}
+
+.incorrectAnswer {
+    background: red;
+    border: 1px solid red;
+}
+
+a.topicLink:hover {
+
+}
+
+a.topicSelectedLink {
+    color: rgb(64, 64, 64);
+}
+
+a.topicSelectedLink:hover {
+
+}
+
+.questionHeader {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;;
+    margin-bottom: 35px;
+    color: var(--header-color);
+}
+
+.topicName {
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--header-color);
+}
+
+a.topicLink {
+    color: var(--header-color);
+}
+
+div#questionTopic {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+
+.questionTopicLink {
+    color: var(--header-color);
+}
+
+.questionTopicLink:hover {
+    text-decoration: underline;
+}
+
+.questionTopicLink:hover,
+.questionTopicLink:visited,
+.questionTopicLink:active {
+    color: var(--header-color);
+    text-decoration: none;;
+}
+
+div#answerContainer {
+    position: relative;
+    display: none;
+    left: 0px;
+    top: 0px;
+    width: 700px;
+    background: var(--foreground-color);
+    margin-top: 30px;
+}
+
+div#questionGraphicFrame {
+    padding-bottom: 15px;
+}
+
+img#questionGraphic {
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
+
+.mjx-chtml .MathJax_CHTML {
+    font-size: 119% !important;
+}
+
+#questionText {
+    color: var(--main-text-color);
+    width: 610px;
+    font-size: 14px;
+}
+
+table#choicesTable {
+    width: 695px;
+    margin-top: 20px;
+}
+
+td.choiceLetter {
+    width: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.choiceLetterCircle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(224, 224, 224);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background : var(--foreground-color);
+    color: var(--main-text-color);
+}
+
+div.selectedChoice {
+    background : rgb(64, 64, 64);
+    color: white;
+}
+
+span.choiceLetterText {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    user-select: none;
+}
+
+td.choiceText {
+    padding-left: 10px;
+    font-size: 14px;
+    cursor: default;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div#freeResponseFrame {
+    margin-top: 30px;
+}
+
+input#freeResponseInput {
+    border: 1px solid rgb(224, 224, 224);
+    font-size: 14px;
+    outline: none;
+    height: 25px;
+    width: 50px;
+}
+
+input[type="text"][disabled] {
+    border: 1px solid rgb(9, 107, 183);
+    color: rgb(64, 64, 64);
+}
+
+div#questionButtons {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(224, 224, 224);
+    height: 40px;
+}
+
+#answer {
+    width: 610px;
+    margin-top: 20px;
+}
+
+.correctAnswerText {
+    padding-left: 15px;
+    padding-top: 5px;
+    vertical-align: middle;
+    color: lightgreen;
+    font-size: 20px !important;
+}
+
+.incorrectAnswerText {
+    padding-left: 15px;
+    padding-top: 3px;
+    vertical-align: middle;
+    color: red;
+    font-size: 18px !important;
+}
+
+div#explanationHeader {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--header-color);
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid rgb(224, 224, 224);
+    margin-bottom: 25px;
+}
+
+div#explanation {
+    width: 610px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+div.graphic {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+div.additionalExplanation {
+    margin-top: 25px;
+}
+
+div#needHelpButton {
+    position: absolute;
+    left: 75px;
+    bottom: 32px;
+}
+
+button#submitAnswerButton {
+    display: inline-block;
+    text-align: center;
+    left: 0px;
+    top: 25px;
+    width: 82px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 17px;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+}
+
+button.submitAnswerButtonEnabled {
+    background: rgb(9, 107, 183);
+    color: rgb(248, 248, 248);
+}
+
+button.submitAnswerButtonDisabled {
+    background: rgb(204, 204, 204);
+    color: rgb(248, 248, 248);
+}
+
+div#answerButtons {
+    position: relative;
+    padding-top: 20px;
+    border-top: 1px solid rgb(224, 224, 224);
+    height: 35px;
+    margin-top: 35px;
+}
+
+div#flagQuestionButton {
+    position: absolute;
+    right: 85px;
+    text-align: center;
+    margin-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 17px;
+    font-size: 12px;
+    width: 82px;
+    background: white;
+    color: rgb(64, 64, 64);
+    border: 1px rgb(224, 224, 224) solid;
+    cursor: pointer;
+    user-select: none;
+}
+
+div#nextQuestionButton {
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    width: 82px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 17px;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    background: rgb(9, 107, 183);
+    color: rgb(248, 248, 248);
+}
+
+div#doneButton {
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    width: 82px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 17px;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    background: rgb(9, 107, 183);
+    color: rgb(248, 248, 248);
+}
+
+/***************************************************************************************/
+
+div#finalScreen {
+    display: none;
+    position: absolute;
+    width: 800px;
+    top: 80px;
+    left: 50%;
+    margin-left: -400px;
+}
+
+div#finalScreen-completionMessage {
+    text-align: left;
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    color:rgb(64, 64, 64);
+}
+
+div#finalScreen-pointsMessage {
+    text-align: left;
+    margin-top: 60px;
+    font-size: 16px;
+    color:rgb(128, 128, 128);
+}
+
+div#finalScreen-buttonBar {
+    display: none;
+    margin-top: 25px;
+    border-top: 1px solid rgb(224, 224, 224);
+    padding-top: 20px;
+}
+
+div#finalScreen-doneButton {
+    text-align: center;
+    top: 25px;
+    width: 160px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 17px;
+    font-size: 12px;
+    background: rgb(9, 107, 183);
+    color: rgb(248, 248, 248);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* new */
+td.augmentation {
+    vertical-align: top;
+}
+
+div#prerequisiteFrame {
+    text-align: left;
+    width: 300px;
+    background: var(--foreground-color);
+    border: var(--border-style);
+    margin-top: 15px;
+    font-size: 13px;
+    padding: 15px;
+    /* margin-right: 25px; */
+    position: fixed;
+    left: 240px;
+    top: 62px;
+}
+
+div.prerequisite {
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+div#prerequisiteHeader {
+    font-weight: bold;
+}
+
+div.question {
+    color: var(--main-text-color) !important;
+    margin-bottom: 20px;
+}
+
+body, p, td, th, input {
+    color: var(--main-text-color);
+}
