@@ -8,17 +8,15 @@ div#topRibbon {
     --header-color: #2498eb;
     --main-text-color: #dcddde;
     --border-style: 1px solid rgb(224, 224, 224);
+    --secondary-text-color: #AAAAFA;
 }
 
 div.graphic > img {
     /* changes how graphs and images look */
-    filter: invert(100%) grayscale(40%);
+    filter: invert(100%) invert(13%) sepia(5%) saturate(1126%) hue-rotate(174deg) brightness(100%) contrast(85%);
 }
 
-td,
-li,
 .mjpage,
-span,
 span.mjpage,
 svg,
 mjx-container,

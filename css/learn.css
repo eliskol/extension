@@ -1,7 +1,18 @@
 div#beltList,
-div#courseUnits {
+div#courseUnits,
+div#graph {
     background: var(--background-color) !important;
 }
+
+/* for knowledge graph */
+polygon {
+    fill: var(--background-color) !important;
+}
+
+g.edge > polygon, g.edge > path {
+    stroke: var(--main-text-color) !important;
+}
+/* end knowledge graph */
 
 div.reviewAnswerList,
 div.taskUnlocked,
@@ -21,17 +32,21 @@ td.leaderboardUserName {
 a#learnHeaderLink,
 #topicName,
 div#prerequisitesHeader,
-span.taskTypeUnlocked,
 a.courseNameLink,
 div.sidebarHeader,
 span.taskTypeLocked,
 td#leaderboardTitle,
 span.tabSelected,
-span.taskPointsUnlocked,
-div.taskPrerequisitesHeader,
+span.taskTypeUnlocked,
 a.stepAnchor,
 div#selectingTasks {
     color: var(--header-color) !important;
+}
+
+div.taskPrerequisites > div.taskPrerequisitesHeader,
+div.taskHeader > span.taskPointsUnlocked,
+span#userMenu-name {
+color: var(--secondary-text-color);
 }
 
 a.sectionLink {
