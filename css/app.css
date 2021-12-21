@@ -1,0 +1,744 @@
+@import 'normalizer.css';
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background: var(--background-color)
+}
+
+body, p, td, th, input {
+    font-family: Arial;
+    font-size: 12px;
+}
+
+th {
+    font-size: 13px;
+    text-align: left;
+}
+
+input {
+    padding-left: 6px;
+}
+
+a {
+    color: #0577c7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0577c7;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0577c7;
+}
+
+div#topRibbon {
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    opacity: 100%;
+    z-index: 10;
+    background: var(--foreground-color);
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+img.logo {
+    display: block;
+    margin-top: 6px;
+    max-width: 275px;
+    width: auto;
+    height: auto;
+}
+
+div#wrap {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div#topBarContainer {
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+
+div#topBar {
+    position: absolute;
+    margin-top: 9px;
+    text-align: left;
+    width: 1000px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a#appTitle {
+    color: white;
+    font-size: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}
+
+div#headerLinks {
+    position: relative;
+    font-size: 14px;
+    left: 45px;
+    top: 2px;
+}
+
+div#headerLinksLeft {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    font-size: 14px;
+}
+
+div#headerLinksRight {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    font-size: 14px;
+}
+
+a.headerLink {
+    color: rgb(164, 164, 164);
+    font-size: 14px;
+    margin-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    border-bottom: 3px solid white;
+}
+
+a.headerLink:hover {
+    color: #0577c7;
+    text-decoration: none;
+}
+
+div#userHeader {
+    margin-top: -8px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    background-color: rgb(245, 245, 245);
+    font-size: 15px;
+    height: 38px;
+    width: 38px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 19px;
+    cursor: default;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+div#contentMenu {
+    position: absolute;
+    left: 310px;
+    top: 30px;
+    visibility: hidden;
+    z-index: 1000;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+div#userMenu {
+    position: absolute;
+    right: 5px;
+    top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    visibility: hidden;
+    z-index: 1000;
+    background: var(--background-color);
+    border: 1px solid rgb(224, 224, 224);
+    text-transform: capitalize;
+}
+
+div#userMenu-info {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 80px;
+
+    white-space: nowrap;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    padding-bottom: 15px;
+}
+
+span#userMenu-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(64, 64, 64);
+}
+
+span#userMenu-points {
+    font-size: 14px;
+    margin-left: 20px;
+    color: rgb(135, 135, 135);
+}
+
+div.headerMenuItem {
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 120px;
+    font-size: 15px;
+    background: var(--background-color);
+    color: rgb(64, 64, 64);
+    cursor: pointer;
+}
+
+div.headerMenuItem:hover {
+    background: rgb(242, 242, 242);
+}
+
+div#topMenu {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    color: rgb(64, 64, 64);
+}
+
+#topMenu a {
+    color: rgb(64, 64, 64);
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#topMenu a:hover {
+    color: #0577c7;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+div#content {
+    position: relative;
+    top: 70px;
+}
+
+div#footer {
+    margin-top: 30px;
+    border-top: 1px solid rgb(224, 224, 224);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1#pageTitle {
+    color: rgb(64, 64, 64);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2#learningObjective {
+    font-size: 15px;
+    color: rgb(128, 128, 128);
+    margin-bottom: 30px;
+}
+
+.button {
+    padding: 6px 15px 6px 15px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    background: #0577c7;
+    color: white;
+    cursor: pointer;
+}
+
+a.createTest {
+    float: right;
+    margin-right: 100px;
+}
+
+.button:hover, a.button:hover {
+    opacity: 0.9;
+    color: white;
+    text-decoration: none;
+}
+
+.button:visited, a.button:visited {
+    color: white;
+    text-decoration: none;
+}
+
+div.codeBlock {
+    padding-left: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: rgb(242, 242, 242);
+    width: 710px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-family: Courier;
+}
+
+span.codeInline {
+    font-size: 13px;
+    font-family: Courier;
+}
+
+/******************************************************************************/
+
+div.menuButton {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    height: 18px;
+    width: 15px;
+    border: 1px solid rgb(242, 242, 242);
+    background-image: url('/img/expand-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 3px 6px;
+}
+
+div.menuButton:hover {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    height: 18px;
+    width: 15px;
+    border: 1px solid rgb(224, 224, 224);
+    background-image: url('/img/expand-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 3px 6px;
+}
+
+div.listMenuButton {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    height: 18px;
+    width: 15px;
+    background-image: url('/img/vertical-ellipse-light.png');
+    background-repeat: no-repeat;
+    background-position: 3px 1px;
+    cursor: pointer;
+}
+
+div.listMenuButton:hover {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    height: 18px;
+    width: 15px;
+    background-image: url('/img/vertical-ellipse-dark.png');
+    background-repeat: no-repeat;
+    background-position: 3px 1px;
+    cursor: pointer;
+}
+
+div.menu {
+    border: 1px solid rgb(224, 224, 224);
+    background: white;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.menuItem {
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+div.menuItemHover {
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: rgb(242, 242, 242);
+}
+
+div.menuItemDisabled {
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: rgb(164, 164, 164);
+}
+
+div.menuItemWithSubMenu {
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-image: url('/img/sub-menu-arrow.png');
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+}
+
+div.menuItemWithSubMenuHover {
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: rgb(242, 242, 242);
+    background-image: url('/img/sub-menu-arrow.png');
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+}
+
+div.menuItemWithSubMenuDisabled {
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: rgb(164, 164, 164);
+    background-image: url('/img/sub-menu-arrow.png');
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+}
+
+div.menuItemWithCheck {
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-image: url('/img/menu-check-mark.png');
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+}
+
+div.menuItemWithCheckHover {
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: rgb(242, 242, 242);
+    background-image: url('/img/menu-check-mark.png');
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+}
+
+div.menuItemWithCheckDisabled {
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: rgb(164, 164, 164);
+    background-image: url('/img/menu-check-mark.png');
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+}
+
+/******************************************************************************/
+
+div.breadcrumbs {
+    font-size: 13px;
+    padding-top: 8px;
+    margin-bottom: 8px;
+}
+
+div.breadcrumb {
+    padding-top: 4px;
+}
+
+span.breadcrumbDelimeter {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+/******************************************************************************/
+
+div#tabList {
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    width: 1095px;
+}
+
+div.tab {
+    display: inline;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    z-index: 20px;
+    user-select: none;
+}
+
+div.tabSelected {
+    display: inline;
+    font-size: 14px;
+    cursor: default;
+    border-left: 1px solid rgb(224, 224, 224);
+    border-top: 2px solid #0577c7;
+    border-right: 1px solid rgb(224, 224, 224);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    background: white;
+    user-select: none;
+}
+
+/******************************************************************************/
+
+td#sidebar {
+    font-size: 14px;
+}
+
+div.sidebarLabel {
+    margin-top: 5px;
+}
+
+div.sidebarLink {
+    margin-top: 7px;
+    font-size: 12px;
+}
+
+div.sidebarHeader {
+    margin-top: 50px;
+    color: rgb(64, 64, 64);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.alert {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    width: 20%;
+    font-size: 16px;
+}
+
+.alert:hover {
+    cursor: pointer;
+}
+
+span.lessonStepCount, span.commentCount, span.countAcceptedQuestions {
+    background: rgb(228, 228, 228);
+    margin-left: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+span.flagCount {
+    background: rgb(228, 228, 228);
+    margin-left: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 2px;
+}
+
+.breadcrumbs {
+    padding-bottom: 5px;
+}
+
+ol.questionStatements {
+    list-style-type: upper-roman;
+    margin-left: -15px;
+}
+
+ol.questionStatements > li {
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-top: 0;
+}
+
+.my-form {
+    margin-bottom: 10px;
+}
+
+#gallery {
+    margin-top: 10px;
+}
+
+#gallery img {
+    width: 150px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#fileElem {
+    display: none;
+}
+
+.menuButtonVisibility {
+    visibility: hidden;
+}
+
+div.questionDifficulty {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 21px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+div.difficultyEasy {
+    background: #4AA4FF;
+    color: white;
+}
+
+div.freeResponseFormat {
+    background: white;
+    color: rgb(64 64 64);
+    border: 1px solid rgb(64 64 64);
+    width: 14px;
+    height: 14px;
+}
+
+.freeAssignedSymbol {
+    transform: translate(0, -1px);
+}
+
+div.difficultyModerate {
+    background: #0577c7;
+    color: white;
+}
+
+div.difficultyHard {
+    background: #004185;
+    color: white;
+}
+
+.iconsContainer {
+    display: inline-flex;
+}
+
+.assignedQuestionDifficulty {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+div.assignedQuestionHeaderPractice {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+grammarly-extension {
+    z-index: 1000;
+}
+
+.revisionCellDimensions {
+    vertical-align: top;
+    padding: 0 15px;
+    position: relative;
+    font-size: 14px;
+}
+
+.revisionCell1 {
+    text-align: center;
+    vertical-align: top;
+    fontStyle: italic;
+    paddingTop: 15px;
+    fontFamily: Arial;
+    color: rgb(128, 128, 128);
+    white-space: normal;
+    line-height: normal;
+}
+
+.tutorialsStatusAccepted {
+    display: inline-block;
+    background-image: url(/img/accepted-tutorial.png);
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+    height: 23px;
+    width: 19px;
+    transform: translate(3px, 4px);
+}
+
+.tutorialsStatusSubmitted {
+    display: inline-block;
+    background-image: url(/img/submitted-tutorial.png);
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+    height: 23px;
+    width: 19px;
+    transform: translate(3px, 4px);
+}
+
+.tutorialsStatusDraft {
+    display: inline-block;
+    background-image: url(/img/draft-tutorial.png);
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+    height: 23px;
+    width: 19px;
+    transform: translate(3px, 4px);
+}
+
+.tutorialIcon {
+    padding-top: 12px !important;
+}
+
+.ratedValue {
+    font-weight: bold;
+}
+
+.result-link {
+    color: black;
+}
+
+.result-link:hover {
+    color: black;
+    /*text-decoration: none;*/
+}
+
+div.graphic {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.statusDraft {
+    color: rgb(128, 128, 128);
+}
+
+.statusSubmitted {
+    font-weight: bold;
+    color: rgb(64, 64, 64);
+}
+
+.statusAccepted {
+    font-weight: bold;
+    color: green;
+}
+
+.statusDeleted {
+    font-weight: bold;
+    color: rgb(105, 105, 105);
+}
+
+.statusFlagged {
+    font-weight: bold;
+    color: red;
+}
