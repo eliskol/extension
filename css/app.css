@@ -658,9 +658,9 @@ grammarly-extension {
 .revisionCell1 {
     text-align: center;
     vertical-align: top;
-    fontStyle: italic;
-    paddingTop: 15px;
-    fontFamily: Arial;
+    font-style: italic;
+    padding-top: 15px;
+    font-family: Arial;
     color: rgb(128, 128, 128);
     white-space: normal;
     line-height: normal;
@@ -783,7 +783,13 @@ span.mjpage,
 svg,
 mjx-container,
 g {
-    fill: var(--main-text-color) !important;
-    stroke: var(--main-text-color) !important;
-    color: var(--main-text-color) !important;
+    fill: var(--main-text-color);
+    stroke: var(--main-text-color);
+    color: var(--main-text-color);
+}
+
+th th g {
+    fill: var(--background-color) !important;
+    stroke: var(--background-color) !important;
+    color: var(--background-color) !important;
 }
