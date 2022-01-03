@@ -772,3 +772,18 @@ div#content > div#sidebar {
 div#sidebar > div#sequenceName {
     color: var(--header-color);
 }
+
+div.graphic > img {
+    /* changes how graphs and images look */
+    filter: invert(100%) invert(13%) sepia(5%) saturate(1126%) hue-rotate(174deg) brightness(100%) contrast(85%);
+}
+
+.mjpage,
+span.mjpage,
+svg,
+mjx-container,
+g {
+    fill: var(--main-text-color) !important;
+    stroke: var(--main-text-color) !important;
+    color: var(--main-text-color) !important;
+}

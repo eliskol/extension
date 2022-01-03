@@ -1,3 +1,6 @@
+const CSSFILES = ['app.css', 'normalizer.css', 'popup.css', 'review-question-answer.css', 'student-lesson-review.css', 'student-lesson.css', 'student-tasks.css']
+
+
 document.querySelector('link[rel="shortcut icon"]').href = chrome.runtime.getURL('./img/favicon.png');
 
 chrome.storage.local.get({'toggle': true}, (toggle) => {
@@ -8,11 +11,13 @@ chrome.storage.local.get({'toggle': true}, (toggle) => {
 
         document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
             if (link.href.startsWith('https://mathacademy.com')) {
-                link.remove()
-                newLink = document.createElement('link');
-                newLink.rel = 'stylesheet';
-                newLink.href = chrome.runtime.getURL('/css/' + link.href.split('/')[link.href.split('/').length - 1]);
-                document.head.appendChild(newLink);
+                if (CSSFILES.includes(link.href.split('/')[link.href.split('/').length - 1])) {
+                    link.remove()
+                    newLink = document.createElement('link');
+                    newLink.rel = 'stylesheet';
+                    newLink.href = chrome.runtime.getURL('/css/' + link.href.split('/')[link.href.split('/').length - 1]);
+                    document.head.appendChild(newLink);
+                }
             }
             console.log(link.href.startsWith('https://mathacademy.com') ? link.href.split('/')[link.href.split('/').length - 1] : 'nope');
         });

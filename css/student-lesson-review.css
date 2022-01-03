@@ -1,0 +1,235 @@
+body {
+    background: var(--background-color);
+}
+
+/* This is to style <hr> tags that are sometimes found in tutorials and question explanations */
+hr {
+    border-top: 1px solid rgb(242, 242, 242);
+    margin-bottom: 40px;
+}
+
+div#topMenu {
+    top: 9px;
+}
+
+div#header {
+    text-align: center;
+}
+
+#lessonSidebar {
+    position: fixed;
+    top: 85px;
+    width: 300px;
+    padding: 15px;
+    background: var(--foreground-color);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 3px;
+}
+
+#lessonContent {
+    margin-left: 350px;
+    padding-bottom: 20px;
+}
+
+#courseName {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(96, 96, 96);
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    margin-bottom: 10px;
+}
+
+#topicName {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0577c7;
+}
+
+div#sectionLinks {
+    margin-top: 30px;
+    /*background: rgb(243, 246, 248);*/
+    /*background: rgb(230, 243, 253);*/
+    background: var(--foreground-color);
+}
+
+div.sectionTitle {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+a.sectionLink {
+    color: rgb(164, 164, 164);
+}
+
+a.sectionLink:hover {
+    text-decoration: none;
+}
+
+div#prerequisitesHeader {
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(9, 107, 183);
+}
+
+div.prerequisite {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+a.prerequisiteLink {
+    color: rgb(104, 104, 104);
+}
+
+.step {
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 3px;
+    margin-bottom: 15px;
+    background: var(--foreground-color);
+}
+
+div.stepHeader {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;;
+    margin-bottom: 35px;
+    color: rgb(30, 25, 78);
+}
+
+a.stepAnchor {
+    padding-top: 102px;
+    color: rgb(30, 25, 78);
+    text-decoration: none;
+}
+
+
+.step p, td, li {
+    font-size: 15px;
+    color: rgb(40, 40, 40);
+    line-height: 1.8;
+}
+
+p {
+    margin-bottom: 40px;
+    color: rgb(64, 64, 64);
+}
+
+.questionGraphic {
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.questionText p, td, li, span {
+    font-size: 16px;
+    color: rgb(64, 64, 64);
+}
+
+.questionExplanationFrame {
+    display: none;
+}
+
+
+
+.questionExplanation p, td, li {
+    font-size: 16px;
+    color: rgb(64, 64, 64);
+}
+
+table.choicesTable {
+    margin-top: 30px;
+    color: rgb(64, 64, 64);
+}
+
+td.choiceLetter {
+    width: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(64, 64, 64);
+    user-select: none;
+}
+
+div.choiceLetterCircle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(224, 224, 224);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+}
+
+div.selectedChoice {
+    background: rgb(64, 64, 64);
+    color: white;
+}
+
+td.choiceText {
+    padding-left: 10px;
+    font-size: 14px;
+    cursor: default;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+div.correctIncorrect {
+    margin-top: 35px;
+    font-size: 16px;
+}
+
+span.correctLetter {
+    font-weight: bold;
+    color: red;
+}
+
+div.explanationHeader {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(30, 25, 78);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-top: 1px solid rgb(224, 224, 224);
+    padding-top: 15px;;
+}
+
+div.explanation {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+div.bottomButtons {
+    position: relative;
+    padding-top: 20px;
+    border-top: 1px solid rgb(224, 224, 224);
+    height: 35px;
+    margin-top: 35px;
+}
+
+div.flagButton {
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    margin-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 17px;
+    font-size: 12px;
+    width: 82px;
+    background: white;
+    color: rgb(64, 64, 64);
+    border: 1px rgb(224, 224, 224) solid;
+    cursor: pointer;
+    user-select: none;
+}

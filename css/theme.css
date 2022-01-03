@@ -1,7 +1,3 @@
-/* div#topRibbon {
-    background: var(--foreground-color) !important;
-} */
-
 :root {
     --background-color: #23272A;
     --foreground-color: #2C2F33;
@@ -11,22 +7,3 @@
     --secondary-text-color: #AAAAFA;
     --info-text-color: #aaabb1;
 }
-
-div.graphic > img {
-    /* changes how graphs and images look */
-    filter: invert(100%) invert(13%) sepia(5%) saturate(1126%) hue-rotate(174deg) brightness(100%) contrast(85%);
-}
-
-.mjpage,
-span.mjpage,
-svg,
-mjx-container,
-g {
-    fill: var(--main-text-color) !important;
-    stroke: var(--main-text-color) !important;
-    color: var(--main-text-color) !important;
-}
-
-/* body {
-    background: var(--background-color) !important;
-} */
