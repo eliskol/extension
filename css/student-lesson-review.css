@@ -111,7 +111,7 @@ a.stepAnchor {
 
 .step p, td, li {
     font-size: 15px;
-    color: rgb(40, 40, 40);
+    color: var(--main-text-color);
     line-height: 1.8;
 }
 
