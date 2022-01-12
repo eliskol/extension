@@ -788,7 +788,7 @@ g {
     color: var(--main-text-color);
 }
 
-th th g {
+th th span, th th g, tr > th > span {
     fill: var(--background-color) !important;
     stroke: var(--background-color) !important;
     color: var(--background-color) !important;
