@@ -459,3 +459,9 @@ div.prerequisite {
 div#prerequisiteHeader {
     font-weight: bold;
 }
+
+th th span, th th g, table > tbody > tr > th span, th > span span, th > span g{
+    fill: var(--background-color) !important;
+    stroke: var(--background-color) !important;
+    color: var(--background-color) !important;
+}
