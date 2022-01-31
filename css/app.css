@@ -773,7 +773,7 @@ div#sidebar > div#sequenceName {
     color: var(--header-color);
 }
 
-div.graphic > img {
+div.graphic > img, div.questionGraphic > img, td.choiceText > img {
     /* changes how graphs and images look */
     filter: invert(100%) invert(13%) sepia(5%) saturate(1126%) hue-rotate(174deg) brightness(100%) contrast(85%);
 }
@@ -792,4 +792,26 @@ th th span, th th g, tr > th > span {
     fill: var(--background-color) !important;
     stroke: var(--background-color) !important;
     color: var(--background-color) !important;
+}
+
+span[style='background-color: lightgray;'] {
+    background-color: rgb(82, 82, 82) !important;
+}
+
+td[bgcolor="#D6EAF8"], td[bgcolor="#D6EAF8"] g {
+    stroke: black;
+    color: black;
+    fill: black;
+}
+
+g[stroke="blue"] {
+    stroke: lightskyblue;
+}
+
+g[fill="blue"] {
+    fill: lightskyblue;
+}
+
+td.testFieldName, td.testFieldValue {
+    color: var(--header-color);
 }

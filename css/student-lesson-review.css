@@ -117,7 +117,7 @@ a.stepAnchor {
 
 p {
     margin-bottom: 40px;
-    color: rgb(64, 64, 64);
+    color: var(--main-text-color);
 }
 
 .questionGraphic {
@@ -127,7 +127,7 @@ p {
 
 .questionText p, td, li, span {
     font-size: 16px;
-    color: rgb(64, 64, 64);
+    color: var(--main-text-color);
 }
 
 .questionExplanationFrame {
