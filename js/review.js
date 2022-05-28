@@ -56,7 +56,10 @@ const createPrerequisiteDisplay = (prerequisiteJSON) => {
     // questionRow.appendChild(secondDummyTd);
 }
 
-
-fetchPrerequisites().then(json => {
-    createPrerequisiteDisplay(json);
+chrome.storage.local.get({'toggle': true}, (result) => {
+    if (result['toggle']) {
+        fetchPrerequisites().then(json => {
+            createPrerequisiteDisplay(json);
+        });
+    }
 });

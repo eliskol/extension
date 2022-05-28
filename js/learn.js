@@ -27,10 +27,14 @@ const beltImages = {
     "img/belt-icon-black-red.png": "br.png"
 }
 
-for (let [key, value] of Object.entries(beltImages)) {
-    document.querySelectorAll(`img[src="${key}"]`).forEach(img => {
-        img.src = chrome.runtime.getURL(`./img/belts/${value}`);
-    })
-}
+chrome.storage.local.get({'toggle': true}, (toggle) => {
+    if (toggle['toggle']) {
+        for (let [key, value] of Object.entries(beltImages)) {
+            document.querySelectorAll(`img[src="${key}"]`).forEach(img => {
+                img.src = chrome.runtime.getURL(`./img/belts/${value}`);
+            })
+        }
 
-document.querySelector(`div[onclick="showGraph();"]`).style.background = `url(${chrome.runtime.getURL('./img/dots.png')}) 0px 0px`;
+        document.querySelector(`div[onclick="showGraph();"]`).style.background = `url(${chrome.runtime.getURL('./img/dots.png')}) 0px 0px`;
+    }
+})

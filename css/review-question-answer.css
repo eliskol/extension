@@ -167,6 +167,7 @@ img#questionGraphic {
     color: var(--main-text-color);
     width: 610px;
     font-size: 14px;
+    display: block !important;
 }
 
 table#choicesTable {
@@ -435,7 +436,7 @@ div#prerequisiteFrame {
     padding: 15px;
     /* margin-right: 25px; */
     position: fixed;
-    left: 240px;
+    left: 170px;
     top: 62px;
 }
 
